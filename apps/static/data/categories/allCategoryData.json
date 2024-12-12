@@ -1,0 +1,44 @@
+[
+   {
+      "id": 101,
+      "name": "Technology",
+      "slug": "technology",
+      "count": 51
+   },
+   {
+      "id": 102,
+      "name": "Lifestyle",
+      "slug": "lifestyle",
+      "count": 30
+   },
+   {
+      "id": 103,
+      "name": "Photography",
+      "slug": "photography",
+      "count": 12
+   },
+   {
+      "id": 104,
+      "name": "Photography",
+      "slug": "photography",
+      "count": 12
+   },
+   {
+      "id": 105,
+      "name": "Health & Fitness",
+      "slug": "health-&-fitness",
+      "count": 36
+   },
+   {
+      "id": 106,
+      "name": "Business",
+      "slug": "business",
+      "count": 91
+   },
+   {
+      "id": 107,
+      "name": "Marketing",
+      "slug": "marketing",
+      "count": 47
+   }
+]

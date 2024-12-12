@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../main.css" />
+		<title>Two Column</title>
+	</head>
+	<body>
+		<!-- header section start  -->
+		<header></header>
+		<!-- main section start  -->
+
+		<main class="container mx-auto px-5 sm:px-0">
+			<!--------- Page Info Component ---------->
+			<section class="py-4 bg-base-100 text-center font-work">
+				<h1 class="text-base-content font-semibold text-3xl">Page Title</h1>
+				<div class="text-base breadcrumbs text-base-content/80 font-work mt-2 flex items-center justify-center">
+					<ul>
+						<li>
+							<a href="/" class="hover:text-primary transition hover:duration-300 font-medium">Home</a>
+						</li>
+						<li>
+							<span class="text-base-content/60 font-normal">Link One</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!--------- page banner or post card overlay Component ---------->
+			<section class="mt-12">
+				<div class="card relative font-work">
+					<!-- Card Image -->
+					<figure>
+						<img width="1216" height="450" alt="banner_image" src="https://placehold.it/1216x450" class="rounded-xl" />
+					</figure>
+					<div class="card-body p-2 md:p-10 absolute bottom-0 w-full md:w-8/12 z-20">
+						<div class="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">Technology</div>
+						<h3>
+							<a href="/" class="text-neutral-content line-clam-3 font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition hover:duration-500">The Impact of Technology on the Workplace: How Technology is Changing</a>
+						</h3>
+						<div class="mt-3 md:mt-6 flex items-center gap-5 text-neutral-content">
+							<div class="flex items-center gap-3">
+								<div class="avatar">
+									<div class="w-9 rounded-full">
+										<img src="https://placehold.it/100x100" alt="avatar" />
+									</div>
+								</div>
+								<h5>
+									<a href="/" class="text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason Francisco</a>
+								</h5>
+							</div>
+							<p class="text-xs md:text-base">August 20, 2022</p>
+						</div>
+					</div>
+
+					<!-- overlay -->
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+				</div>
+			</section>
+			<!---------- all post card in a 2 grid basis component ------------->
+			<div class="mt-12 w-full">
+				<!-- all post card in a 2 grid basis component -->
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+					<!-- post card start  -->
+					<div class="card w-fit p-4 border border-base-content/10 rounded-xl font-work">
+						<a href="/single-post">
+							<figure class="w-full">
+								<img src="https://placehold.it/360x240" alt="email" class="rounded-xl w-full" width="360" height="240" />
+							</figure>
+						</a>
+						<div class="card-body py-6 px-2 font-medium">
+							<span class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work">Technology</span>
+							<h3>
+								<a href="/single-post" class="text-base-content line-clam-3 hover:text-primary transition-all duration-300 ease-in-out font-semibold text-lg md:text-xl lg:text-2xl mt-2 font-work">The Impact of Technology on the Workplace: How Technology is Changing</a>
+							</h3>
+							<div class="mt-5 flex items-center gap-5 text-base-content/60">
+								<div class="flex items-center gap-3">
+									<div class="avatar">
+										<div class="w-9 rounded-full">
+											<img src="https://placehold.it/100x100" alt="avatar" />
+										</div>
+									</div>
+									<h5>
+										<a href="/" class="text-base font-medium hover:text-primary transition hover:duration-300 font-work">Jason Francisco</a>
+									</h5>
+								</div>
+								<p class="text-base font-work">August 20, 2022</p>
+							</div>
+						</div>
+					</div>
+					<!-- post card end  -->
+				</div>
+
+				<div class="flex items-center justify-center mt-8">
+					<a href="/" class="btn btn-outline btn-secondary text-secondary-content/60 font-medium text-sm">View All Post</a>
+				</div>
+			</div>
+			<!---------- advertisement Component -------->
+			<section class="w-full my-20 flex items-center justify-center">
+				<div class="w-full lg:w-9/12">
+					<div class="py-14 bg-base-content/10 text-base-content/60 text-center rounded-xl">
+						<h6 class="text-sm font-work">Advertisement</h6>
+						<p class="text-xl font-semibold font-work">You can place ads</p>
+						<p class="text-lg font-work">750x100</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- footer section start  -->
+		<footer id="footer"></footer>
+		<!-- script section  -->
+		<script src="../../js/main.js"></script>
+	</body>
+</html>

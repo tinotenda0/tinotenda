@@ -1,0 +1,26 @@
+{
+   "name": "metablog",
+   "version": "1.0.0",
+   "private": true,
+   "workspaces": [
+      "apps/headless-wp",
+      "packages/*"
+   ],
+   "scripts": {
+      "build": "turbo run build",
+      "start": "turbo run start",
+      "dev": "turbo run dev",
+      "lint": "turbo run lint",
+      "format": "prettier --write \"**/*.{ts,tsx,md}\""
+   },
+   "devDependencies": {
+      "eslint-config-custom": "workspace:*",
+      "prettier": "latest",
+      "turbo": "latest"
+   },
+   "engines": {
+      "node": ">=16.0.0"
+   },
+   "dependencies": {},
+   "packageManager": "pnpm@7.9.0"
+}

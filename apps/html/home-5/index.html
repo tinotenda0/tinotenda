@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- header section start  -->
+    <header></header>
+    <!-- main section start  -->
+    <main class="container mx-auto px-5 sm:px-0">
+        <!-------------- Post Carousel Component ----------------- -->
+        <section class="relative">
+            <div class="relative rounded-xl font-work mb-24">
+                <!-- card section -->
+                <div>
+                    <img width="1216" height="600" alt="banner_image" src="https://placehold.it/1216x600"
+                        class="rounded-xl" />
+                    <div
+                        class="absolute -bottom-16 left-4 md:left-14 rounded-xl p-4 md:p-10 bg-base-100 w-10/12 md:w-7/12 lg:w-6/12 shadow-[0_12px_24px_-6px] shadow-base-content/20">
+                        <div
+                            class="w-fit text-primary-content px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-4">
+                            Technology</div>
+                        <h3>
+                            <a href="/"
+                                class="text-base-content line-clam-3 font-semibold text-xl md:text-2xl lg:text-4xl leading-5 md:leading-10 hover:text-primary transition-all hover:duration-500">The
+                                Impact of Technology on the Workplace: How Technology is Changing</a>
+                        </h3>
+                        <div class="mt-6 flex items-center gap-5">
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">
+                                    <div class="w-9 rounded-full">
+                                        <img src="https://placehold.it/100x100" alt="avatar" />
+                                    </div>
+                                </div>
+                                <h6>
+                                    <a href="/"
+                                        class="text-base-content/60 text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason
+                                        Francisco</a>
+                                </h6>
+                            </div>
+                            <p class="text-base-content/60 text-xs md:text-base">August 20, 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider pre and next button -->
+                <div class="grid sm:flex items-center gap-1 md:gap-4 absolute right-1 sm:right-0 -bottom-16 z-40">
+                    <!-- pre button -->
+                    <button
+                        class="w-7 md:w-10 h-7 md:h-10 border border-secondary rounded-md flex items-center justify-center hover:border-primary hover:bg-primary group transition duration-300 ease-in-out">
+                        <svg class="text-secondary group-hover:text-white w-3 h-3 md:w-auto md:h-auto" width="8"
+                            height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                d="M7.47541 0.712087C7.84153 1.0782 7.84153 1.6718 7.47541 2.03791L2.51333 7L7.47541 11.9621C7.84153 12.3282 7.84153 12.9218 7.47541 13.2879C7.1093 13.654 6.5157 13.654 6.14959 13.2879L0.524587 7.66291C0.158471 7.2968 0.158471 6.7032 0.524587 6.33709L6.14959 0.712087C6.5157 0.345971 7.1093 0.345971 7.47541 0.712087Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                    <!-- next button -->
+                    <button
+                        class="w-7 md:w-10 h-7 md:h-10 border border-secondary rounded-md flex items-center justify-center hover:border-primary hover:bg-primary group transition duration-300 ease-in-out">
+                        <svg class="text-secondary group-hover:text-white w-3 h-3 md:w-auto md:h-auto" width="8"
+                            height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                d="M0.524587 0.712087C0.890704 0.345971 1.4843 0.345971 1.85041 0.712087L7.47541 6.33709C7.84153 6.7032 7.84153 7.2968 7.47541 7.66291L1.85041 13.2879C1.4843 13.654 0.890704 13.654 0.524587 13.2879C0.158471 12.9218 0.158471 12.3282 0.524587 11.9621L5.48667 7L0.524587 2.03791C0.158471 1.6718 0.158471 1.0782 0.524587 0.712087Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-------------- Post Tags Component start --------------->
+        <section class="py-8">
+            <div
+                class="flex flex-wrap md:flex-nowrap items-center justify-center gap-7 p-5 border border-base-content border-opacity-10 rounded-xl">
+                <p class="text-base-content font-semibold text-base whitespace-nowrap leading-5">Most Search Tags :</p>
+                <!----- start tags items  ----->
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-1">
+                    <!-- tags 1 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 2 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 3 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 4 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 5 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tag 6 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 7 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                    <!-- tags 8 -->
+                    <span
+                        class="text-primary text-xs font-medium px-2 py-1 bg-primary bg-opacity-5 rounded-md">#Keyword</span>
+                </div>
+                <!----- end tags items  ----->
+            </div>
+        </section>
+        <!-------------- Trending Post Component start ----------------->
+        <section class="py-10">
+            <div class="font-work flex items-center justify-between mb-8">
+                <h5 class="text-base-content text-2xl font-bold">Trending Post</h5>
+                <a href="/" class="btn btn-outline btn-secondary text-secondary-content/60 font-medium text-sm">View All
+                    Post</a>
+            </div>
+            <!-----Start Trending Post card items  ----->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+                <!-- card 1 -->
+                <div class="card relative w-fit h-fit font-work">
+                    <!-- Card Image -->
+                    <div class="min-h-[320px]">
+                        <figure class="h-full max-w-full">
+                            <img src="https://placehold.it/700x700" alt="post-card"
+                                class="rounded-xl min-h-[320px] h-full object-cover" />
+                        </figure>
+                    </div>
+                    <div class="card-body gap-0 absolute bottom-0 rounded-xl w-full z-20 p-6">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <div class="badge bg-primary border-0 rounded-md">Technology</div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-lg font-semibold line-clam-3 text-neutral-content hover:text-primary transition hover:duration-300 line-clamp-3">
+                                    The Impact of Technology on the Workplace: How Technology is Changing</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                </div>
+                <!-- card 2 -->
+                <div class="card relative w-fit h-fit font-work">
+                    <!-- Card Image -->
+                    <div class="min-h-[320px]">
+                        <figure class="h-full max-w-full">
+                            <img src="https://placehold.it/700x700" alt="post-card"
+                                class="rounded-xl min-h-[320px] h-full object-cover" />
+                        </figure>
+                    </div>
+                    <div class="card-body gap-0 absolute bottom-0 rounded-xl w-full z-20 p-6">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <div class="badge bg-primary border-0 rounded-md">Technology</div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-lg font-semibold line-clam-3 text-neutral-content hover:text-primary transition hover:duration-300 line-clamp-3">
+                                    The Impact of Technology on the Workplace: How Technology is Changing</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                </div>
+                <!-- card 3 -->
+                <div class="card relative w-fit h-fit font-work">
+                    <!-- Card Image -->
+                    <div class="min-h-[320px]">
+                        <figure class="h-full max-w-full">
+                            <img src="https://placehold.it/700x700" alt="post-card"
+                                class="rounded-xl min-h-[320px] h-full object-cover" />
+                        </figure>
+                    </div>
+                    <div class="card-body gap-0 absolute bottom-0 rounded-xl w-full z-20 p-6">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <div class="badge bg-primary border-0 rounded-md">Technology</div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-lg font-semibold line-clam-3 text-neutral-content hover:text-primary transition hover:duration-300 line-clamp-3">
+                                    The Impact of Technology on the Workplace: How Technology is Changing</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                </div>
+                <!-- card 4 -->
+                <div class="card relative w-fit h-fit font-work">
+                    <!-- Card Image -->
+                    <div class="min-h-[320px]">
+                        <figure class="h-full max-w-full">
+                            <img src="https://placehold.it/700x700" alt="post-card"
+                                class="rounded-xl min-h-[320px] h-full object-cover" />
+                        </figure>
+                    </div>
+                    <div class="card-body gap-0 absolute bottom-0 rounded-xl w-full z-20 p-6">
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <div class="badge bg-primary border-0 rounded-md">Technology</div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#">
+                                <h2
+                                    class="text-lg font-semibold line-clam-3 text-neutral-content hover:text-primary transition hover:duration-300 line-clamp-3">
+                                    The Impact of Technology on the Workplace: How Technology is Changing</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                </div>
+            </div>
+            <!-----End Trending Post card items  ----->
+        </section>
+        <!-------------- Advertisement Component start 1----------------->
+        <div class="my-10">
+            <div class="container mx-auto w-11/12 lg:w-8/12">
+                <div class="py-4 bg-base-content/10 text-base-content/60 text-center rounded-xl font-work">
+                    <p class="text-sm">Advertisement</p>
+                    <p class="text-xl font-semibold">You can place ads</p>
+                    <p class="text-lg">750x100</p>
+                </div>
+            </div>
+        </div>
+        <!-------------- Editor Pick Posts Component start ----------------->
+        <section class="py-10">
+            <div class="font-work flex items-center justify-between mb-8">
+                <h5 class="text-base-content text-2xl font-bold">Editor Pick</h5>
+                <a href="/" class="btn btn-outline btn-secondary text-secondary-content/60 font-medium text-sm">View All
+                    Post</a>
+            </div>
+
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 sm:px-0">
+                <!--------- Post Overlay Md cards items ------->
+                <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 items-center gap-5">
+                    <!-- card 1 -->
+                    <div class="card relative font-work max-h-[406px]">
+                        <!-- Card Image -->
+                        <figure>
+                            <img width="1216" height="406px" alt="{`banner_image`}" src="https://placehold.it/800x406"
+                                class="rounded-xl w-full object-cover min-h-[406px]" />
+                        </figure>
+                        <div class="card-body p-2 md:p-6 absolute bottom-0 w-full z-20">
+                            <div
+                                class="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">
+                                Technology</div>
+                            <h3>
+                                <a href="/"
+                                    class="text-neutral-content line-clam-3 font-semibold text-xl md:text-2xl hover:text-primary transition hover:duration-500">The
+                                    Impact of Technology on the Workplace: How Technology is Changing</a>
+                            </h3>
+                            <div class="mt-3 md:mt-6 flex items-center gap-5 text-neutral-content">
+                                <div class="flex items-center gap-3">
+                                    <div class="avatar">
+                                        <div class="w-9 rounded-full">
+                                            <img src="https://placehold.it/100x100" alt="avatar" />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        <a href="/"
+                                            class="text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason
+                                            Francisco</a>
+                                    </h5>
+                                </div>
+                                <p class="text-xs md:text-base">August 20, 2022</p>
+                            </div>
+                        </div>
+
+                        <!-- overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card relative font-work max-h-[406px]">
+                        <!-- Card Image -->
+                        <figure>
+                            <img width="1216" height="406px" alt="{`banner_image`}" src="https://placehold.it/800x406"
+                                class="rounded-xl w-full object-cover min-h-[406px]" />
+                        </figure>
+                        <div class="card-body p-2 md:p-6 absolute bottom-0 w-full z-20">
+                            <div
+                                class="w-fit text-white px-2.5 py-1 bg-primary text-xs md:text-sm rounded-md mb-2 md:mb-4">
+                                Technology</div>
+                            <h3>
+                                <a href="/"
+                                    class="text-neutral-content line-clam-3 font-semibold text-xl md:text-2xl hover:text-primary transition hover:duration-500">The
+                                    Impact of Technology on the Workplace: How Technology is Changing</a>
+                            </h3>
+                            <div class="mt-3 md:mt-6 flex items-center gap-5 text-neutral-content">
+                                <div class="flex items-center gap-3">
+                                    <div class="avatar">
+                                        <div class="w-9 rounded-full">
+                                            <img src="https://placehold.it/100x100" alt="avatar" />
+                                        </div>
+                                    </div>
+                                    <h5>
+                                        <a href="/"
+                                            class="text-xs md:text-base font-medium hover:text-primary transition hover:duration-300">Jason
+                                            Francisco</a>
+                                    </h5>
+                                </div>
+                                <p class="text-xs md:text-base">August 20, 2022</p>
+                            </div>
+                        </div>
+
+                        <!-- overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+                    </div>
+                </div>
+                <!------- Post Overlay Sm cards items ------->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
+                    <!-- card 1 -->
+                    <div class="card">
+                        <!-- card body section  -->
+                        <div class="card-body p-4 border border-base-content/10 rounded-xl w-fit">
+                            <div class="flex items-center justify-center gap-4 font-work">
+                                <figure class="flex-none">
+                                    <a href="/single-post">
+                                        <img src="https://placehold.it/110x90" alt="PostCard_image" class="rounded-md"
+                                            width="110px" height="190px" />
+                                    </a>
+                                </figure>
+                                <div>
+                                    <h5>
+                                        <a href="/"
+                                            class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300 line-clam-2">All
+                                            the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                    </h5>
+                                    <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card">
+                        <!-- card body section  -->
+                        <div class="card-body p-4 border border-base-content/10 rounded-xl w-fit">
+                            <div class="flex items-center justify-center gap-4 font-work">
+                                <figure class="flex-none">
+                                    <a href="/single-post">
+                                        <img src="https://placehold.it/110x90" alt="PostCard_image" class="rounded-md"
+                                            width="110px" height="190px" />
+                                    </a>
+                                </figure>
+                                <div>
+                                    <h5>
+                                        <a href="/"
+                                            class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300 line-clam-2">All
+                                            the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                    </h5>
+                                    <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card">
+                        <!-- card body section  -->
+                        <div class="card-body p-4 border border-base-content/10 rounded-xl w-fit">
+                            <div class="flex items-center justify-center gap-4 font-work">
+                                <figure class="flex-none">
+                                    <a href="/single-post">
+                                        <img src="https://placehold.it/110x90" alt="PostCard_image" class="rounded-md"
+                                            width="110px" height="190px" />
+                                    </a>
+                                </figure>
+                                <div>
+                                    <h5>
+                                        <a href="/"
+                                            class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300 line-clam-2">All
+                                            the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                    </h5>
+                                    <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------- With Sidebar Section Component start ----------------->
+        <section class="py-10">
+            <div class="flex flex-col lg:grid lg:grid-cols-12 gap-8 items-start">
+                <!------- Body Component ------->
+                <div class="col-span-12 lg:col-span-8">
+                    <!-- Post Magnific Overlay Single Component -->
+                    <div class="font-work flex items-center justify-between mb-8">
+                        <h5 class="text-base-content text-2xl font-bold">Latest Post</h5>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="grid grid-cols-1 gap-5">
+                            <!-- card 1 -->
+                            <div class="pb-5 border-b border-base-content/10">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="pb-5 border-b border-base-content/10">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="pb-5 border-b border-base-content/10">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 4 -->
+                            <div class="pb-5 border-b border-base-content/10">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 5 -->
+                            <div class="pb-5 border-b border-base-content/10">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="pb-5">
+                                <div class="card">
+                                    <!-- card body section -->
+                                    <div class="card-body p-0 rounded-xl w-fit">
+                                        <div
+                                            class="flex flex-col md:flex-row items-center justify-center gap-6 font-work">
+                                            <figure class="flex-none w-full md:w-fit">
+                                                <a href="/single-post">
+                                                    <img src="https://placehold.it/320x240" alt="PostCard_image"
+                                                        class="rounded-md w-full md:w-fit" width="320px"
+                                                        height="240px" />
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span
+                                                    class="btn no-animation hover:bg-primary hover:text-primary-content bg-primary/5 border-0 text-primary text-sm px-3 py-2 min-h-fit h-fit rounded-md w-fit capitalize font-work mb-3">Technology</span>
+                                                <h3>
+                                                    <a href="/"
+                                                        class="font-work line-clam-2 font-semibold text-xl md:text-2xl text-base-content leading-7 hover:text-primary transition hover:duration-300">The
+                                                        Art of Traveling: Tips and Tricks for a Memorable Journey</a>
+                                                </h3>
+                                                <p class="mt-4 font-serif text-base text-base-content/70">Traveling can
+                                                    be a thrilling and enriching experience, but it also requires
+                                                    careful planning and preparation...</p>
+                                                <div class="mt-6 flex items-center gap-5 text-base-content/60">
+                                                    <div class="flex items-center gap-2">
+                                                        <div class="avatar">
+                                                            <div class="w-7 rounded-full">
+                                                                <img src="https://placehold.it/100x100" alt="avatar" />
+                                                            </div>
+                                                        </div>
+                                                        <h5>
+                                                            <a href="/"
+                                                                class="text-sm font-medium hover:text-primary transition hover:duration-300 whitespace-nowrap">Tracey
+                                                                Wilson</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p class="text-sm whitespace-nowrap">August 20, 2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <a href="/"
+                            class="btn btn-outline btn-secondary text-secondary-content/60 font-medium text-sm">View All
+                            Post</a>
+                    </div>
+                    <!-- Advertisement Component -->
+                    <div class="mt-16 mb-10 w-full">
+                        <div class="py-4 bg-base-content/10 text-base-content/60 text-center rounded-xl font-work">
+                            <p class="text-sm">Advertisement</p>
+                            <p class="text-xl font-semibold">You can place ads</p>
+                            <p class="text-lg">750x100</p>
+                        </div>
+                    </div>
+                </div>
+                <!------- Sidebar Component ------->
+                <div class="col-span-12 lg:col-span-4 flex flex-col gap-5 justify-center order-last lg:order-none">
+                    <!-- Single popularpost component -->
+                    <div class="p-8 border border-base-content/10 rounded-xl w-full">
+                        <h5 class="text-base-content font-bold text-2xl font-work">Latest Post</h5>
+                        <div class="grid grid-cols-1 gap-6 mt-8">
+                            <!-- card 1 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 4 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 5 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card 6 -->
+                            <div class="card">
+                                <!-- card body section -->
+                                <div class="card-body p-0">
+                                    <div class="flex items-center gap-4 font-work">
+                                        <figure class="flex-none">
+                                            <img src="https://placehold.it/110x90" alt="PostCard_image"
+                                                class="rounded-md" width="110px" height="190px" />
+                                        </figure>
+                                        <div>
+                                            <h5>
+                                                <a href="/"
+                                                    class="font-work line-clam-2 font-semibold text-base text-base-content leading-5 hover:text-primary transition hover:duration-300">All
+                                                    the Stats, Facts, and Data You&apos;ll Ever Need to Know</a>
+                                            </h5>
+                                            <p class="mt-2.5 text-base-content/60 text-sm">26 Feb 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar category section -->
+                    <div class="rounded-xl border border-base-content border-opacity-10 p-8">
+                        <h4 class="text-xl font-semibold leading-6 text-base-content">Category</h4>
+                        <div class="pt-6">
+                            <!-- category item 1 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Technology</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">50</span>
+                            </div>
+                            <!-- category item 2 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Lifestyle</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">12</span>
+                            </div>
+                            <!-- category item 3 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Photography</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">26</span>
+                            </div>
+                            <!-- category item 4 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Health
+                                    & Fitness</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">36</span>
+                            </div>
+                            <!-- category item 5 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Business</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">94</span>
+                            </div>
+                            <!-- category item 6 -->
+                            <div
+                                class="flex items-center justify-between last:border-none border-b border-base-content border-opacity-10 py-3.5">
+                                <a href="/"
+                                    class="text-base font-medium text-base-content text-opacity-70 capitalize hover:text-primary transition ease-in-out duration-300">Marketing</a>
+                                <span
+                                    class="px-2 py-1 rounded-md bg-primary bg-opacity-5 text-primary text-xs font-medium">47</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Advertisement Vertical Component -->
+                    <div
+                        class="grid items-center justify-center bg-base-content/10 rounded-xl min-h-[360px] max-w-[250px] w-full mx-auto">
+                        <div class="text-base-content/60 text-center font-work">
+                            <p class="text-sm">Advertisement</p>
+                            <p class="text-xl font-semibold">You can place ads</p>
+                            <p class="text-lg">250x360</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer section start  -->
+    <footer id="footer"></footer>
+    <!-- script section  -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

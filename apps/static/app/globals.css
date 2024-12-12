@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   /*   all heading Work Sans */
+   h1,
+   h2,
+   h3 {
+      font-family: var(--font-work-sans);
+      font-weight: 600;
+   }
+   h4,
+   h5,
+   h6 {
+      font-family: var(--font-work-sans);
+      font-weight: 500;
+   }
+   p,
+   span,
+   a,
+   li,
+   td,
+   th,
+   input,
+   textarea,
+   select,
+   button {
+      font-family: var(--font-work-sans);
+      font-weight: 400;
+   }
+
+   /*   all body text Source Sans Pro */
+   body {
+      font-family: var(--font-source-serif-pro);
+      font-weight: 400;
+      font-size: 1rem;
+   }
+}
+
+.line-clam-2 {
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 2;
+}
+
+.line-clam-3 {
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+}
