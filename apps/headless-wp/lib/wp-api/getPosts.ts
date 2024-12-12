@@ -1,6 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
-
-// ... (your existing type definitions)
+import { QueryParams, GetPostsResult, ResObject, Post } from './types' // Adjust path if needed
 
 /**
  * Fetches all post data from the WordPress API.
@@ -29,33 +28,24 @@ export const getPosts = async (query?: QueryParams): Promise<GetPostsResult> => 
     // Create an Axios instance with default configurations
     const wpAxios = axios.create({
       baseURL: `${apiUrl}/wp-json/wp/v2/`,
-      timeout: 5000, // Optional: set a timeout for requests
+      timeout: 5000,
       headers: {
         'Content-Type': 'application/json',
       },
-      // If authentication is required, configure it here
-      // Example using Basic Auth:
-      // auth: {
-      //   username: process.env.WORDPRESS_USERNAME || '',
-      //   password: process.env.WORDPRESS_PASSWORD || '',
-      // }
     })
 
     // Make the GET request to the 'posts' endpoint with query parameters and embedding
     const response: AxiosResponse<ResObject[]> = await wpAxios.get('posts', {
       params: {
-        _embed: true, // Equivalent to adding '?_embed' in fetch
+        _embed: true,
         ...finalQuery,
       },
-      // Note: Axios doesn't support Next.js's 'next' fetch option like 'revalidate'
-      // If caching is required, handle it using HTTP headers or other caching mechanisms
     })
 
     // Check if data is received and has elements
     if (response.data && response.data.length > 0) {
-      // Map the received data to include only necessary fields
       const posts: Post[] = response.data.map((post) => ({
-        id: post.id || '',
+        id: post.id.toString(),
         title: post.title.rendered || '',
         slug: post.slug || '',
         featuredmedia: {
@@ -85,21 +75,16 @@ export const getPosts = async (query?: QueryParams): Promise<GetPostsResult> => 
       error: false,
     }
   } catch (error) {
-    // Log the error for debugging purposes
     console.error('Error fetching posts:', error)
 
-    // Determine the error message
     let message = 'An unknown error occurred.'
 
     if (axios.isAxiosError(error)) {
       if (error.response) {
-        // Server responded with a status other than 2xx
         message = `Error: ${error.response.status} - ${error.response.statusText}`
       } else if (error.request) {
-        // Request was made but no response received
         message = 'No response received from the server.'
       } else {
-        // Something happened in setting up the request
         message = error.message
       }
     } else if (error instanceof Error) {
