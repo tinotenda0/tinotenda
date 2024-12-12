@@ -1,6 +1,5 @@
 import Sidebar from '@/components/sidebar'
 import { getCategories, getPosts } from '@/lib/wp-api'
-// import { getPosts } from '@/lib/wp-api';
 import { getSearch } from '@/lib/wp-api/getSearch'
 import { Advertisement, PageInfo, PostGridTwoCol } from '@metablog/ui'
 import { Metadata } from 'next'
@@ -37,7 +36,11 @@ export default async function SearchPage({
                <div className="col-span-12 lg:col-span-8">
                   <div className="mt-8">
                      {/* all post collection Component */}
-                     {data.length === 0 ? (
+                     {!data ? (
+                        <div className="text-center text-2xl font-bold">
+                           Loading...
+                        </div>
+                     ) : data.length === 0 ? (
                         <div className="text-center text-2xl font-bold">
                            No search result found
                         </div>
