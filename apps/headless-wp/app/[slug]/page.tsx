@@ -33,16 +33,18 @@ const getPostByPostSlug = async (slug: any) => {
 
    if (error) return notFound()
 
-   if (data?.length === 0) {
-      return notFound()
-   } else if (data?.length > 0) {
-      return {
-         post: data[0],
-         error: false,
-      }
-   } else {
-      return notFound()
-   }
+   if (!data) {
+  return notFound();
+}
+
+if (data.length === 0) {
+  return notFound();
+}
+
+return {
+  post: data[0],
+  error: false,
+};
 }
 
 const SinglePost = async ({ params }: { params: { slug: string } }) => {
