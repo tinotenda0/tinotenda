@@ -3,23 +3,21 @@ import Sidebar from '@/components/sidebar'
 import { getPosts } from '@/lib/wp-api'
 import { PostGridTwoCol } from '@metablog/ui'
 import React from 'react'
-import { Post } from '@/lib/wp-api/types' // Make sure this is correct
+import { Post } from '@/lib/wp-api/types' // adjust path if needed
 
-const PageBody = ({
-  PostData,
-  categoryData,
-}: {
-  PostData: Post[] | null // Make sure the type matches the data shape
+interface PageBodyProps {
+  PostData: Post[] | null
   categoryData: any
-}) => {
+}
+
+const PageBody: React.FC<PageBodyProps> = ({ PostData, categoryData }) => {
   const [showPerPage, setShowPerPage] = React.useState(8)
   const [showMore, setShowMore] = React.useState(false)
   
-  // Initialize as an empty array or null, but here empty array is convenient
+  // We type the state as Post[] only, and fallback to [] for null data.
   const [allPosts, setAllPosts] = React.useState<Post[]>([])
 
   React.useEffect(() => {
-    // If PostData can be null, fallback to empty array
     setAllPosts(PostData || [])
   }, [PostData])
 
@@ -28,7 +26,7 @@ const PageBody = ({
     if (showMore) {
       const getMorePosts = async () => {
         const { data } = await getPosts({ per_page: showPerPage })
-        // If data can be null, fallback to empty array
+        // fallback to empty array if data is null
         setAllPosts(data || [])
         setShowMore(false)
       }
@@ -42,14 +40,13 @@ const PageBody = ({
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 items-start">
           {/* Body Component */}
           <div className="col-span-12 lg:col-span-8">
-            {/* all post collection Component */}
             <PostGridTwoCol data={allPosts} />
             <div className="flex items-center justify-center mt-8">
-              {/* if showMore true show loading */}
+              {/* If showMore is true, show loading */}
               {showMore && (
                 <progress className="progress w-56 mx-auto"></progress>
               )}
-              {/* show more button */}
+              {/* Show more button if we still have more posts to load */}
               {showPerPage <= allPosts.length && (
                 <button
                   className="btn btn-outline btn-secondary font-work px-5"
