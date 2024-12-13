@@ -3,30 +3,31 @@ import Sidebar from '@/components/sidebar'
 import { getPosts } from '@/lib/wp-api'
 import { PostGridTwoCol } from '@metablog/ui'
 import React from 'react'
-import { Post } from '@/lib/wp-api/types' // adjust path if needed
+import { Post } from '@/lib/wp-api/types'
 
-interface PageBodyProps {
-  PostData: Post[] | null
-  categoryData: any
-}
-
-const PageBody: React.FC<PageBodyProps> = ({ PostData, categoryData }) => {
+export default function PageBody({
+  PostData,
+  categoryData,
+}: {
+  PostData: Post[] | null;
+  categoryData: any;
+}) {
   const [showPerPage, setShowPerPage] = React.useState(8)
   const [showMore, setShowMore] = React.useState(false)
   
-  // We type the state as Post[] only, and fallback to [] for null data.
+  // State is explicitly typed as Post[], no null allowed
   const [allPosts, setAllPosts] = React.useState<Post[]>([])
 
   React.useEffect(() => {
+    // If PostData is null, fallback to empty array
     setAllPosts(PostData || [])
   }, [PostData])
 
-  // *** get more posts ***
   React.useEffect(() => {
     if (showMore) {
       const getMorePosts = async () => {
         const { data } = await getPosts({ per_page: showPerPage })
-        // fallback to empty array if data is null
+        // If data can be null, fallback to empty array
         setAllPosts(data || [])
         setShowMore(false)
       }
@@ -42,11 +43,7 @@ const PageBody: React.FC<PageBodyProps> = ({ PostData, categoryData }) => {
           <div className="col-span-12 lg:col-span-8">
             <PostGridTwoCol data={allPosts} />
             <div className="flex items-center justify-center mt-8">
-              {/* If showMore is true, show loading */}
-              {showMore && (
-                <progress className="progress w-56 mx-auto"></progress>
-              )}
-              {/* Show more button if we still have more posts to load */}
+              {showMore && <progress className="progress w-56 mx-auto"></progress>}
               {showPerPage <= allPosts.length && (
                 <button
                   className="btn btn-outline btn-secondary font-work px-5"
@@ -60,12 +57,10 @@ const PageBody: React.FC<PageBodyProps> = ({ PostData, categoryData }) => {
               )}
             </div>
           </div>
-          {/* Sidebar Component */}
+          {/* Sidebar */}
           <Sidebar data={allPosts} categoryData={categoryData} />
         </div>
       </div>
     </section>
   )
 }
-
-export default PageBody
