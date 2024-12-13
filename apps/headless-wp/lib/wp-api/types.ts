@@ -10,6 +10,7 @@ export type QueryParams = {
   post?: string
   slug?: string
   status?: string
+  author?: number
 }
 
 // ********** getPosts Types ********** //
