@@ -42,7 +42,7 @@ export type ResObject = {
 }
 
 export type Post = {
-  id: string
+  id: number
   title: string
   slug: string
   featuredmedia: {
