@@ -45,7 +45,7 @@ export const getPosts = async (query?: QueryParams): Promise<GetPostsResult> => 
     // Check if data is received and has elements
     if (response.data && response.data.length > 0) {
       const posts: Post[] = response.data.map((post) => ({
-        id: post.id.toString(),
+        id: post.id,
         title: post.title.rendered || '',
         slug: post.slug || '',
         featuredmedia: {
